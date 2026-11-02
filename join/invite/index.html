@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173E35">
+  <title>Help us grow · Shared Abundance</title>
+  <meta name="description" content="Invite two people to activate your Shared Abundance membership.">
+  <link rel="canonical" href="https://sharedabundance.world/join/invite/">
+  <meta property="og:title" content="Help us grow · Shared Abundance">
+  <meta property="og:description" content="Invite two people to activate your Shared Abundance membership.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sharedabundance.world/join/invite/">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-name">Shared Abundance</span>
+        <span class="brand-desc">An AI Commons Initiative</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="/how-it-works/">How it works</a>
+        <a href="/join/" aria-current="page">Join</a>
+        <a href="/rules/">Rules</a>
+        <a href="/progress/">Progress</a>
+        <a href="/contribute/" class="nav-cta">Contribute</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reading">
+        <span class="badge">Help us grow</span>
+        <h1 style="margin-top:1rem" id="invite-title">Your account is ready</h1>
+        <p class="lead">Thank you for joining. One more step: invite two people.</p>
+        <p>Your membership becomes active once two people you invite have joined. This is how Shared Abundance grows: person to person, through people who know each other.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="how-invite-heading">
+      <div class="container reading">
+        <h2 id="how-invite-heading">How Help us grow works</h2>
+        <ol class="prose-list">
+          <li><strong>You tell us who to invite.</strong> Add the name, email and mobile number of two people below.</li>
+          <li><strong>We send each of them one invitation.</strong> One WhatsApp message and one email, with your name, so they know it comes from you.</li>
+          <li><strong>We tell you when each one joins.</strong> When both have joined, your membership becomes active.</li>
+          <li><strong>If someone hasn't joined after a week,</strong> we let you know so you can follow up with them personally.</li>
+          <li><strong>If they still haven't joined after a month,</strong> we remind you once more. After that, we leave it.</li>
+        </ol>
+        <div class="note-box">We only contact each person you invite once. They can simply ignore the message, and we will not chase them.</div>
+      </div>
+    </section>
+
+    <section class="section section-sage member-status" id="member-status" aria-labelledby="status-heading" hidden>
+      <div class="container" style="max-width:48rem">
+        <h2 id="status-heading">Your status</h2>
+        <p id="status-summary"></p>
+        <ul class="milestone-list" id="status-list"></ul>
+        <div id="invite-link-box" hidden>
+          <h3 style="margin-top:1.5rem">Your personal invite link</h3>
+          <p>Share this link with people you know. When they join with it, it counts as your invite.</p>
+          <div class="invite-link-row">
+            <input type="text" id="invite-link" readonly aria-label="Your personal invite link">
+            <button class="btn btn-secondary" type="button" id="invite-link-copy">Copy link</button>
+          </div>
+          <div class="form-status" id="invite-link-status" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sage" id="referral-section" aria-labelledby="referral-form-heading">
+      <div class="container" style="max-width:48rem">
+        <h2 id="referral-form-heading">Invite two people</h2>
+        <p>Choose people you know who might like to hear about this.</p>
+        <div class="form-status is-error" id="token-missing" hidden>This page needs the link from your activation email. Please open that link again, or email <a href="mailto:info@sharedabundance.world">info@sharedabundance.world</a> for help.</div>
+        <form class="form-panel" id="referral-form" novalidate>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="honey-field" aria-hidden="true">
+          <div class="form-grid">
+            <fieldset>
+              <legend>Invite 1</legend>
+              <label>Name
+                <input name="r1_name" type="text" maxlength="120" required>
+              </label>
+              <label>Email
+                <input name="r1_email" type="email" maxlength="200" required placeholder="name@example.com">
+              </label>
+              <label>Mobile number <span class="form-hint">(with country code)</span>
+                <input name="r1_mobile" type="tel" maxlength="30" required placeholder="+27 82 123 4567">
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Invite 2</legend>
+              <label>Name
+                <input name="r2_name" type="text" maxlength="120" required>
+              </label>
+              <label>Email
+                <input name="r2_email" type="email" maxlength="200" required placeholder="name@example.com">
+              </label>
+              <label>Mobile number <span class="form-hint">(with country code)</span>
+                <input name="r2_mobile" type="tel" maxlength="30" required placeholder="+27 82 123 4567">
+              </label>
+            </fieldset>
+            <label class="check-label">
+              <input name="confirm" type="checkbox" required>
+              <span>These people know me and I believe they'd be happy to hear about this.</span>
+            </label>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send invitations</button>
+            </div>
+          </div>
+          <div class="form-status" id="referral-status" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Shared Abundance</div>
+          <p>Building productive AI businesses and sharing the results equally.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="/how-it-works/">How it works</a></li>
+            <li><a href="/join/">Join</a></li>
+            <li><a href="/pioneers/">Pioneers</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Project</div>
+          <ul class="footer-links">
+            <li><a href="/rules/">Project rules</a></li>
+            <li><a href="/progress/">Progress</a></li>
+            <li><a href="/contribute/">Contribute</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Follow</div>
+          <ul class="footer-links">
+            <li><a href="https://www.facebook.com/profile.php?id=61594748557223" rel="noopener noreferrer" target="_blank">Facebook</a></li>
+            <li><a href="https://www.reddit.com/user/SharedAbundance/" rel="noopener noreferrer" target="_blank">Reddit</a></li>
+            <li><a href="mailto:info@sharedabundance.world">info@sharedabundance.world</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>Shared Abundance · Building the commons</span>
+        <span>An AI Commons Initiative</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/site.js" defer></script>
+</body>
+</html>
