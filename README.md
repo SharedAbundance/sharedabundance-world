@@ -14,7 +14,9 @@ Plain semantic HTML, CSS, and a small amount of vanilla JavaScript. No framework
 |-------|---------|
 | `/` | Home: proposition, process, and entry points |
 | `/how-it-works/` | Model detail, finances, growth, industries, FAQ |
-| `/business-001/` | First digital-services pilot |
+| `/join/` | Join: signup form (needs Mini backend) |
+| `/join/invite/` | Help us grow: invite two people (after email activation) |
+| `/business-001/` | Redirect stub to `/join/` (old links) |
 | `/pioneers/` | Early support with temporary, defined terms |
 | `/rules/` | Principles v0.1 and safeguards |
 | `/progress/` | Milestones from concept to operation |
