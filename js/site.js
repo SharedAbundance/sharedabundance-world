@@ -273,8 +273,6 @@
         country: f.country.value.trim(),
         city: f.city.value.trim(),
         ref: f.ref.value.trim(),
-        heard: f.heard.value,
-        help: f.help.value.trim(),
         agree_rules: true,
         whatsapp_ok: !!f.whatsapp_ok.checked,
         website: f.website.value,
@@ -413,6 +411,10 @@
             mobile: cleanMobile(f["r" + n + "_mobile"].value.trim())
           };
         }),
+        profile: {
+          heard: f.heard ? f.heard.value : "",
+          help: f.help ? f.help.value.trim() : ""
+        },
         confirm: true,
         website: f.website.value
       };
